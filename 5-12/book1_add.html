@@ -65,7 +65,7 @@
             <td>{{item.name}}</td>
             <td>{{item.time}}</td>
             <td>
-              <a href="">修改</a>
+              <a href=" ">修改</a>
               <span>|</span>
               <a href="" v-on:click.prevent="del(k)">删除</a>
             </td>
@@ -76,7 +76,7 @@
   </div>
 
 
-  <script src="/js/vue.2.6.12.min.js"></script>
+  <script src="/js/vue.min.js"></script>
   <script src="/js/axios.min.js"></script>
   <script>
 
@@ -91,8 +91,8 @@
         del(i){
           this.list.splice(i,1)
         },
-        //提交 click事件
-        add(){
+        // 提交 click事件
+          add(){
 
           //获取 input中的值
           
